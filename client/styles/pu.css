@@ -1,0 +1,41 @@
+.pu-input {
+    width: 100%;
+}
+.pu-container {
+    padding-top: 32px;
+    border-top: 1px solid;
+    margin-inline: -8px;
+}
+.pu-input-container {
+    border: 1px solid;
+    padding: 8px;
+    background-color: white;
+}
+.pu-bg {
+    background-color: lightgray;
+}
+
+
+.result-table-container {
+    margin-top: 20px;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result-table th, .result-table td {
+    border: 1px solid #000; /* Black border */
+    padding: 8px;
+    text-align: left;
+}
+
+.result-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.result-table tfoot tr {
+    border-top: 2px solid;
+}

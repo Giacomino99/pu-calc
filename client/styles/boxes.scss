@@ -1,0 +1,14 @@
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.center {
+    align-items: center;
+    justify-content: center;
+}

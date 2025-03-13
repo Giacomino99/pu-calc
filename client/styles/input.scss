@@ -1,0 +1,125 @@
+@use "sass:math";
+
+$input-height: 30px;
+
+label {
+    font-size: 14px;
+}
+
+%button-base {
+    color: var(--s-button-color);
+    border: solid 1px var(--s-button-border);
+    box-shadow: 2px 2px var(--s-button-shadow);
+    font-size: 16px;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    height: $input-height;
+    align-content: center;
+    
+    cursor: pointer;
+    user-select: none;
+    
+    &:active {
+        box-shadow: 1px 1px var(--s-button-shadow) inset;
+        /* Default #d0d0d0 */
+    }
+}
+
+.s-button {
+    @extend %button-base;
+    background-color: var(--s-button);
+    /* Default  #f0f0f0 */
+    
+    &:hover {
+        background-color: var(--s-button-hover);
+        /* Default #e0e0e0 */
+    }
+}
+
+.g-button {
+    @extend %button-base;
+    
+    background-color: var(--g-button);
+    /* Default #f0f0f0 */
+    &:hover {
+        background-color: var(--g-button-hover);
+        /* Default #e0e0e0 */
+    }
+}
+
+.r-button {
+    @extend %button-base;
+    background-color: var(--r-button);
+    /* Default #f0f0f0 */
+    &:hover {
+        background-color: var(--r-button-hover);
+        /* Default #e0e0e0 */
+    }
+}
+
+:focus-visible {
+    outline: 1px solid var(--focused);
+}
+
+.s-input, .s-select {
+    border-radius: 0px;
+    border: 1px solid var(--s-button-border);
+    box-sizing: border-box;
+    height: $input-height;
+    padding: 4px 4px;
+    font-size: 14px;
+}
+
+.input-addon {
+    height: $input-height;
+    box-sizing: border-box;
+    padding: 4px 8px;
+    align-content: center;
+    background-color: var(--s-button);
+    border: 1px solid var(--s-button-border);
+    // z-index: -1;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    .s-input, .s-select, .input-addon {
+        border-right: none;
+        
+        &:last-child {
+            border-right: 1px solid;
+        }
+    }
+}
+
+.s-check {
+    appearance: none;
+    position: relative;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    // box-sizing: border-box;
+    border-radius: 0px;
+    cursor: pointer;
+
+    &:checked {
+        background-color: var(--selected);
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url("/check.svg");
+            top: 2px;
+            left: 2px;
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+    &:hover:not(:checked) {
+        background-color: var(--s-button-hover);
+    }
+}

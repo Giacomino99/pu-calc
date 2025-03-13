@@ -1,0 +1,54 @@
+/* Top Logo Bar */
+.header {
+    margin-top: -8px;
+    margin-inline: -8px;
+    margin-bottom: 0px;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 33%, rgba(0,192,160,1) 100%);
+    display: flex;
+}
+.logo-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    user-select: none;
+}
+
+.logo {
+    height: 48px;
+    filter: none;
+    transform: rotate3d(0, 1, 0, 0deg);
+    transition: transform 1s filter 1s;
+}
+.header-text {
+    margin: 0px;
+    font-size: 32px;
+}
+
+/* Navbar */
+.navbar {
+    overflow: hidden;
+    
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    
+    padding: 4px;
+    margin-inline: -8px;
+    margin-bottom: 8px;
+}
+
+.navbar a:not(.nav-right) {
+    float: left;
+    text-align: center;
+    margin-right: 4px;
+}
+
+.nav-right {
+    float: right;
+    margin-left: 4px;
+}
+
+.active {
+    background-color: var(--selected) !important;
+    box-shadow: 1px 1px var(--s-button-shadow) inset !important;
+}

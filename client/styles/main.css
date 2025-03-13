@@ -1,0 +1,62 @@
+:root {
+    /* Color Definitions */
+    --text-color: initial;
+    --soarce-green: hsl(134.4, 69.444%, 28.235%);
+    
+    --nav-button: inital;
+    --selected: lightgrey;
+    
+    --s-button: #f2f2f2;
+    --s-button-hover: hsl(0, 0%, 90%);
+    --s-button-color: initial;
+    --s-button-shadow: black;
+    --s-button-border: black;
+    --g-button: hsl(130, 100%, 80%);;
+    --g-button-hover: hsl(130, 100%, 73%);
+    --r-button: hsl(340, 100%, 85%);
+    --r-button-hover: hsl(340, 100%, 80%);
+    
+    --login-bg: hsl(0, 0%, 99%, 1.0);
+    
+    --focused: black;
+    --input-border: black;
+    
+    --dpurple: #080020;
+    --purple: #100040;
+    --mpurple: #180060;
+    --lpurple: #200080;
+    --llpurple: #4000FF;
+    --dpink: #ff80c0;
+    --pink: #FF99CC;
+    --lpink: #FFADD6;
+    --lcyan: #D0FFFF;
+    --cyan: #A0ffff;
+    --dcyan: #80ffff;
+}
+
+* {
+    font-family: monospace;
+}
+.no-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.badge {
+    height: 20px;
+    padding-inline: 4px;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
