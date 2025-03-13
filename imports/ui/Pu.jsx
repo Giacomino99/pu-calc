@@ -110,7 +110,7 @@ export function Pu() {
                 </div>
                 </div>
                 <div className='vertical pu-input-container'>
-                <label htmlFor='pu-solution-percentage'>Desired PU/PP Percentage in Solution:</label>
+                <label htmlFor='pu-solution-percentage'>Desired Sizing Agent Percentage in Solution:</label>
                 <div className='input-group'>
                     <input
                         type='number'
