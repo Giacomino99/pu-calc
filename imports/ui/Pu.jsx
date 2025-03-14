@@ -20,17 +20,17 @@ export function Pu() {
 
         const result = {
             cellulose_name: `Cellulose (${celluloseWp}%)`,
-            cellulose_mass: cellulose_mass.toFixed(3),
+            cellulose_mass: cellulose_mass.toFixed(1),
             cellulose_wp: cellulosePercent,
-            cellulose_ml: (cellulose_mass / celluloseDensity).toFixed(3),
+            cellulose_ml: (cellulose_mass / celluloseDensity).toFixed(1),
             pu_name: `PU/PP (${puWp}%)`,
-            pu_mass: pu_mass.toFixed(3),
+            pu_mass: pu_mass.toFixed(1),
             pu_wp: puPercent,
-            pu_ml: (pu_mass / puDensity).toFixed(3),
+            pu_ml: (pu_mass / puDensity).toFixed(1),
             water_name: 'DI Water',
-            water_mass: water_mass.toFixed(3),
-            water_wp: ((water_mass*100) / desiredQuantity).toFixed(3),
-            water_ml: water_mass.toFixed(3)
+            water_mass: water_mass.toFixed(1),
+            water_wp: ((water_mass*100) / desiredQuantity).toFixed(1),
+            water_ml: water_mass.toFixed(1)
         };
         setResult(result);
     }
