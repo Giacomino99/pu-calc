@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
-import { Meteor } from 'meteor/meteor';
-import { useTracker } from 'meteor/react-meteor-data';
 
-export function Pu() {
+export function Sizing() {
     const [puWp, setPuWp] = useState(0);
     const [puDensity, setPuDensity] = useState(0);
     const [celluloseWp, setCelluloseWp] = useState(0);
@@ -36,13 +34,6 @@ export function Pu() {
     }
 
     return (
-        <>
-        <div className='header'>
-            <div className='logo-link'>
-                <img className='logo' src='/logo.svg' alt='Soarce Logo'/>
-                <h1 className='header-text'>Soarce Web Utility</h1>
-            </div>
-        </div>
         <div className='horizontal center pu-container'>
             <div className='vertical'>
             <form className='vertical pu-input-container pu-bg' onSubmit={handleCalculate}>
@@ -189,7 +180,6 @@ export function Pu() {
                     </div>
                 )}
             </div>
-            </div>
-        </>
+        </div>
     )
 }
