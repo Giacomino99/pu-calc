@@ -15,20 +15,20 @@ export function Sizing() {
         const cellulose_mass = (desiredQuantity * (cellulosePercent / 100)) / (celluloseWp/100);
         const pu_mass = (desiredQuantity * (puPercent / 100)) / (puWp / 100);
         const water_mass = desiredQuantity - cellulose_mass - pu_mass;
-
+        const decimals = 2;
         const result = {
             cellulose_name: `Cellulose (${celluloseWp}%)`,
-            cellulose_mass: cellulose_mass.toFixed(1),
+            cellulose_mass: cellulose_mass.toFixed(decimals),
             cellulose_wp: cellulosePercent,
-            cellulose_ml: (cellulose_mass / celluloseDensity).toFixed(1),
+            cellulose_ml: (cellulose_mass / celluloseDensity).toFixed(decimals),
             pu_name: `PU/PP (${puWp}%)`,
-            pu_mass: pu_mass.toFixed(1),
+            pu_mass: pu_mass.toFixed(decimals),
             pu_wp: puPercent,
-            pu_ml: (pu_mass / puDensity).toFixed(1),
+            pu_ml: (pu_mass / puDensity).toFixed(decimals),
             water_name: 'DI Water',
-            water_mass: water_mass.toFixed(1),
-            water_wp: ((water_mass*100) / desiredQuantity).toFixed(1),
-            water_ml: water_mass.toFixed(1)
+            water_mass: water_mass.toFixed(decimals),
+            water_wp: ((water_mass*100) / desiredQuantity).toFixed(decimals),
+            water_ml: water_mass.toFixed(decimals)
         };
         setResult(result);
     }
